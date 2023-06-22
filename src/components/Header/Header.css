@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-img {
+  height: 70px;
+}
+
+.button_doe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  background-color: #0199c8;
+  border-radius: 32px;
+  color: #fff;
+  font-weight: 500;
+  margin-right: 24px;
+}
+
+.btn_disable {
+  display: none;
+}
+
+header {
+  position: fixed;
+  font-weight: 600;
+  width: 100vw;
+  z-index: 9;
+}
+
+
+
+@media (max-width: 9999px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100vw;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  font-weight: 400;
+}
+
+
+.nav-list li {
+  color: #222;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #222;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+
+.mid {
+  width: 16px;
+}
+
+.nav-list__animation {
+  border-bottom: 0.5px solid transparent;
+  transition: all 0.5s;
+  color: #222;
+}
+
+.nav-list__animation:hover {
+  border-color: #fff;
+  color: gray;
+}
+
+@media (max-width: 999px) {
+
+  .btn_enable {
+    display: none;
+  }
+
+  .btn_disable {
+    display: flex;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 0vh;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .logo-img {
+    /* display: none; */
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  height: 100vh;
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}

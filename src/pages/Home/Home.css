@@ -1,0 +1,377 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding-top: 100px;
+
+}
+
+:root {
+  --cor-primaria: #009d78;
+  --cor-secundaria: #0d9ecc;
+  --cor-terciaria: #e99922;
+  --cor-quartenaria: #79132a;
+}
+
+.home {
+  display: flex;
+  padding-left: 100px;
+  align-items: center;
+  background-image: url(https://culturalpath.netlify.app/img/national-cancer-institute-N_aihp118p8-unsplash%201.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  height: 45vw;
+}
+
+.containerHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.title_home {
+  font-size: 3.5rem;
+  color: #ffffff;
+}
+
+.text_home {
+  text-align: start;
+  font-size: 1.1rem;
+  width: 50%;
+  color: #fff;
+}
+
+.button_home {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 100px;
+  height: 40px;
+  width: 200px;
+  background-color: var(--cor-secundaria);
+}
+
+.seja_voluntario {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  background-image: url(https://culturalpath.netlify.app/img/Meu%20projeto%202.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  /* background-size: 40%; */
+}
+
+.container_text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  grid-area: text;
+  padding: 100px;
+}
+
+.container-seja-voluntario {
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: grid;
+  height: fit-content;
+  grid-template-areas: 'empty text';
+  grid-template-columns: 0% 80%;
+}
+
+.title_voluntario {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.text_voluntario {
+  width: 100%;
+  font-size: 1rem;
+  text-align: start;
+  width: 80%;
+}
+
+.button_seja_voluntario {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 100px;
+  height: 40px;
+  width: 200px;
+  background-color: var(--cor-quartenaria);
+}
+
+.empresas {
+  display: flex;
+  align-items: center;
+  height: 45vw;
+  background-image: url(https://culturalpath.netlify.app/img/home-parceiro.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 100px;
+}
+
+.container_empresas {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.text_empresas {
+  text-align: start;
+  color: #fff;
+  font-size: 1.1rem;
+  width: 40%;
+}
+
+.button_empresa {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 100px;
+  height: 40px;
+  width: 200px;
+  background-color: var(--cor-primaria);
+}
+
+.calendario {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  padding: 32px;
+  background-image: url(https://culturalpath.netlify.app/img/back-to-school-bell-icon-3d-illustration-png%201.png);
+  background-position: 10%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  width: 100%;
+}
+
+.container-empresa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: grid;
+  height: 100%;
+  grid-template-areas: 'empty text';
+  grid-template-columns: 30% 70%;
+}
+
+.container_text_empresa {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  grid-area: text;
+}
+
+.title_empresa {
+  width: 100%;
+  font: bold;
+  font-size: 4rem;
+  text-wrap: nowrap;
+
+}
+
+.button_calendario {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 100px;
+  width: 200px;
+  height: 40px;
+  background-color: var(--cor-terciaria);
+}
+
+.video__title {
+  font-size: 1.5rem;
+  color: #009d78;
+  font-weight: 800;
+  padding-left: 32px;
+}
+
+/* @media (max-width: 768px) {
+  .container-seja-voluntario {
+    grid-template-columns: 0 100%;
+  }
+} */
+
+@media (max-width: 1000px) {
+  .container-seja-voluntario {
+    place-items: start;
+    text-align: center;
+    /* height: 50vh; */
+    grid-template-columns: 0 100%;
+  }
+
+  .seja_voluntario {
+    height: fit-content;
+    background-size: 40%;
+    background-position: right bottom;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  section {
+    height: 150vw;
+  }
+
+  .home {
+    padding-left: 20px;
+    height: 100vh;
+  }
+
+  .title_home {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .text_home {
+    width: 80%;
+    font-size: 1rem;
+    text-align: start;
+  }
+
+  .button_home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    height: 40px;
+    width: 200px;
+  }
+
+  .container_text {
+    padding: 20px;
+    width: 100vw;
+  }
+
+  .title_voluntario {
+    width: 100%;
+    text-align: start;
+    font-size: 1.75rem;
+  }
+
+  .text_voluntario {
+    width: 60%;
+    text-align: start;
+    font-size: 1rem;
+  }
+
+  .seja_voluntario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .button_seja_voluntario {
+    font-size: 1rem;
+    height: 40px;
+    width: 200px;
+  }
+
+  .empresas {
+    padding-left: 20px;
+    height: 100vh;
+  }
+
+  .text_empresas {
+    width: 80%;
+    font-size: 1rem;
+    text-align: start;
+  }
+
+  .calendario {
+    color: #000;
+    min-height: 70vh;
+    background-size: 45%;
+    font-size: 1rem;
+    font-weight: 300;
+    /* background-image: none; */
+    background-position: right center;
+  }
+
+  .button_empresa {
+    font-size: 1rem;
+    height: 40px;
+    width: 200px;
+  }
+
+  .title_empresa {
+    font-size: 2rem;
+  }
+
+  .button_calendario {
+    font-size: 1rem;
+    height: 40px;
+    width: 200px;
+    background-color: #e99922;
+    color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .container-empresa {
+    grid-template-columns: 0% 100%;
+    /* height: 100%; */
+  }
+
+  .video__title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendario {
+    background-image: none;
+  }
+
+  .container-seja-voluntario {
+    /* place-items: center; */
+    grid-template-columns: 0 100%;
+  }
+
+  .seja_voluntario {
+    background-size: 50%;
+  }
+
+  .text_voluntario {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .text_voluntario {
+    width: 100%;
+  }
+
+  .title_empresa {
+    font-size: 2rem;
+  }
+}
